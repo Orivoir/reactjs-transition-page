@@ -1,13 +1,16 @@
 import React from 'react';
+import DocumentTitle from 'react-document-title';
 
 export default class Home extends React.Component {
     
     render() {
 
         return (
-            <section className="About">
-
-            </section>
+            <DocumentTitle title="about">
+                <section className="About">
+                    <h1>About</h1>
+                </section>
+            </DocumentTitle>
         )
     }
 };
