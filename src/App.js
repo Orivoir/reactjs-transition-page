@@ -111,7 +111,7 @@ export default class App extends React.Component {
               <div>
                 <p>
                   Nous utilisons des cookies pour vous garantir la meilleure expérience sur notre application.<br />
-                  <a href="#" data-tip="lien d'usine">Cliquez ici</a> pour plus d'informations.
+                  <Link to="#" data-tip="factory link">Cliquez ici</Link> pour plus d'informations.
                 </p>
               </div>
             </section>

@@ -35,7 +35,7 @@ export default class Home extends React.Component {
                                     <aside>
                                         <figure>
                                             <img
-                                                src={`https://picsum.photos/id/${Math.floor( Math.random() * 1e2 ) + 1}/350/275`}
+                                                src={`https://picsum.photos/id/${Math.floor( Math.random() * 85 ) + 1}/350/275`}
                                                 alt="random factory"
                                                 width="350"
                                                 height="275"

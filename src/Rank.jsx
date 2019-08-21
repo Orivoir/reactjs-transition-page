@@ -49,7 +49,7 @@ export default class Rank extends React.Component {
      * @param {SyntheticEvent} e 
      */
     onRankOut( e ) {
-
+        /** Silence is <feature /> */
     }
 
     /**
@@ -87,7 +87,7 @@ export default class Rank extends React.Component {
         }, 425);
         
         li.parentNode.classList.add('o-hide') ;
-        
+
     }
 
     /**

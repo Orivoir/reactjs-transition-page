@@ -53,8 +53,12 @@ export default class Home extends React.Component {
                                 </p>
 
                                 <div>
-                                    <button>get started</button>
-                                    <button>download</button>
+                                    <button>
+                                        <a href="#products">
+                                        get started
+                                        </a>
+                                    </button>
+                                    <button data-tip="factory button">download</button>
                                 </div>
 
                             </div>
@@ -88,6 +92,46 @@ export default class Home extends React.Component {
                                     </figcaption>
                                 </figure>
                             </aside>
+
+                        </section>
+
+                        <section className="wrap-products" id="products">
+
+                            <ul>
+                            {
+                                Array.from( Array(4).keys() ).map( key => (
+
+                                    <li>
+                                        <section>
+
+                                            <figure>
+
+                                                <img
+                                                    src={`https://picsum.photos/id/${Math.floor(Math.random()*50)+1}/600/600`}
+
+                                                    width="300"
+                                                    height="300"
+                                                    alt="factory product"
+                                                />
+
+                                                <figcaption>
+                                                    <h2>
+                                                        Elit Lorem laborum sunt pariatur do ut ...
+                                                    </h2>
+
+                                                    <div>
+                                                        <button data-tip="factory button">Buy ( {((Math.random() * 500)+5).toFixed(2)}€ ) </button>
+                                                        <button data-tip="factory button">Learn more</button>
+                                                    </div>
+                                                </figcaption>
+
+                                            </figure>
+
+                                        </section>
+                                    </li>
+                                ) )
+                            }
+                            </ul>
 
                         </section>
 

@@ -10,6 +10,91 @@
     justify-content: space-around;
 }
 
+.Home article section.wrap-products {
+
+    margin-top: 20vh;
+}
+
+.Home article section.wrap-products ul {
+
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    width: 100%;
+    margin: 5vh 0;
+    flex-wrap: wrap;
+}
+
+.Home article section.wrap-products ul li {
+
+    min-width: 300px;
+    margin: 4.5vh 3vh;
+}
+
+
+.Home article section.wrap-products ul li section h2 {
+
+    font-weight: normal;
+    font-size: 1rem;
+    width: 100%;
+    background: rgba(47, 64, 80, .8);
+    color: #fff;
+    word-break: break-all;
+    padding: 1vh 1.5vh;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+
+.Home article section.wrap-products ul li section figure {
+
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.Home article section.wrap-products ul li section figure::before {
+
+    z-index: 6;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('./../senzu.png');
+    background-size: 20vh 20vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #2f4050;
+    transition: .35s linear all;
+    backface-visibility: hidden;
+}
+
+.Home article section.wrap-products ul li section figure:hover::before {
+    
+    transform: rotateY(180deg);
+}
+
+
+.Home article section.wrap-products ul li button {
+
+
+    padding: 1vh 2vh!important;
+    text-transform: capitalize;
+    font-size: .8rem;
+}
+
+
+.Home article section.wrap-products ul li section figure figcaption div {
+
+    display: flex;
+    justify-content: space-between;
+}
+
 .Home article section div:first-child {
 
     margin-left: 8vh;
@@ -70,7 +155,7 @@
     min-height: 35px;
     background-image: url('../senzu.png');
     background-size: cover;
-    background-color: rgb(35,35,35);
+    background-color: #2f4050;
     transition: .3s linear opacity;
 }
 
@@ -115,7 +200,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    background-color: rgb(35,35,35);
+    background-color: #2f4050;
     transition: .3s linear;
 }
 
@@ -142,5 +227,20 @@
     .Home article section aside {
 
         margin: 0;
+    }
+}
+
+@media screen and (max-width: 685px) , (max-height: 530px) {
+
+    .Home article section aside figure figcaption figure::before {
+
+        background-color: transparent;
+    }
+
+    .Home article section.wrap-products ul li section figure::before {
+
+        width: 0;
+        height: 0;
+        display: none;
     }
 }
