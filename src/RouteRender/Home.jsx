@@ -1,6 +1,7 @@
 import React from 'react';
 import DocumentTitle from 'react-document-title';
 import './Home.css';
+import {HashLink as Link} from 'react-router-hash-link';
 
 export default class Home extends React.Component {
     
@@ -54,9 +55,9 @@ export default class Home extends React.Component {
 
                                 <div>
                                     <button>
-                                        <a href="#products">
+                                        <Link to="/#products">
                                         get started
-                                        </a>
+                                        </Link>
                                     </button>
                                     <button data-tip="factory button">download</button>
                                 </div>
