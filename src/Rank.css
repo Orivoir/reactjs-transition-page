@@ -1,0 +1,32 @@
+.Rank ul {
+    
+    display: flex;
+    cursor: pointer;
+    transition: .3s linear opacity;
+}
+
+.Rank ul li {
+    
+    margin: 0 1.5vh;
+}
+
+.Rank ul li:first-child {
+    
+    margin-left: 0;
+}
+
+.Rank ul li:last-child {
+    
+    margin-right: 0;
+}
+
+.Rank ul.o-hide {
+
+    opacity: 0;
+}
+
+.Rank .rank-text {
+
+    font-weight: 700;
+    font-size: 4vh;
+}

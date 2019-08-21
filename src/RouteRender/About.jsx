@@ -1,6 +1,7 @@
 import React from 'react';
 import DocumentTitle from 'react-document-title';
 import './About.css';
+import Rank from './../Rank';
 
 export default class Home extends React.Component {
     
@@ -27,7 +28,7 @@ export default class Home extends React.Component {
                                             <a href="#" data-tip="factory link">Learn more</a>
                                         </p>
 
-                                        {/* <Rank /> */}
+                                        <Rank />
                                     </div>
 
                                     {/* Lorem picsum in aside */}

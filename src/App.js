@@ -48,11 +48,9 @@ export default class App extends React.Component {
       if( !headers.static || !headers.fixed ) return ;
 
       if( pageY >= headers.static.offsetHeight*2 ) {
-        headers.static.classList.add('static-header-hide') ;
         headers.fixed.classList.add('fixed-header-visible') ;
       } else if( pageY <= 0 ) {
         headers.fixed.classList.remove('fixed-header-visible') ;
-        headers.static.classList.remove('static-header-hide') ;
       }
   }
 
@@ -118,6 +116,8 @@ export default class App extends React.Component {
               </div>
             </section>
           }
+
+          {/* wrap animated */} 
           <div id="wrap-animated">
             
             <h1>Senzu Factory Template</h1>
