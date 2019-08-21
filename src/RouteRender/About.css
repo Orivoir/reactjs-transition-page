@@ -1,0 +1,119 @@
+.About article {
+
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 3vh auto;
+}
+
+.About article section {
+
+    width: 100%;
+    display: flex;
+    margin: 3.5vh auto;
+    justify-content: space-around;
+    padding-bottom: 3vh;
+    border-bottom: 2px solid rgb(150,150,150);
+}
+
+.About article section:last-child {
+
+    border: none;
+}
+
+.About article section.banner-even {
+
+    flex-direction: row-reverse;
+}
+
+.About article section aside figure {
+
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    height: 100%;
+}
+
+.About article section aside figure::after {
+
+    content: '';
+    position: absolute;
+    min-width: 35px;
+    min-height: 35px;
+    height: 5vh;
+    width: 5vh;
+    background-image: url('./../senzu.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb( 35,35,35 );
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    transition: .35s linear;
+}
+
+.About article section aside figure:hover::after {
+
+    opacity: 0;
+}
+
+.About article section aside {
+    
+    margin: 0 2vh;
+}
+
+.About article section div {
+
+    margin: 0 2vh;
+}
+
+.About article section div p a {
+
+    color: #00a9a0;
+}
+
+
+.About article section aside figure img:hover {
+
+    transform: scale( 1.2 );
+}
+
+.About article section aside figure img:hover + figcaption {
+
+    transform: translateY(-100%);
+}
+
+.About article section aside figure img {
+
+    height: 100%;
+    width: 100%;
+    transition: .35s linear all;
+}
+
+.About article section aside figcaption {
+
+    transition: .35s linear all;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: .75rem;
+    width: 100%;
+    background: rgba( 0,0,0,.75 );
+    padding: 1.5vh 0;
+    color: #fff;
+    text-align: center;
+}
+
+@media screen and (max-width: 650px) {
+
+    .About article section {
+
+        flex-direction: column;
+    }
+
+        
+    .About article section.banner-even {
+
+        flex-direction: column-reverse;
+    }
+}

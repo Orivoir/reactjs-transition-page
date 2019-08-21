@@ -8,7 +8,10 @@ export default class Home extends React.Component {
         return (
             <DocumentTitle title="factory">
                 <section className="Factory">
-                    <h1>Factory</h1>
+                    <h1>
+                        <span>Lorem Senzum</span>
+                        <blockquote>Factory template of <a data-tip="go 2 real platform of Senzu" href="https://senzu.app">senzu.app</a></blockquote>
+                    </h1>
                 </section>
             </DocumentTitle>
         )

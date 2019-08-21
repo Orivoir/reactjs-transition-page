@@ -1,0 +1,146 @@
+.Home article {
+
+    margin: 4.5vh 0;
+}
+
+.Home article section {
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.Home article section div:first-child {
+
+    margin-left: 8vh;
+}
+
+
+.Home article section div:last-child {
+
+    padding: 3vh 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Home article section div button {
+
+    text-transform: uppercase;
+    padding: 2vh 4vh;
+    border: none;
+    border-radius: 8px;
+    letter-spacing: .15rem;
+    transition: .25s linear background;
+}
+
+.Home article section div button:first-child {
+
+    background: #00a9a0;
+    color: #fff;
+}
+
+.Home article section div button:first-child:hover {
+
+    background: #11928c;
+}
+
+.Home article section div button:last-child {
+
+    background: rgb( 85,85,85 );
+    color: #fff;
+}
+
+.Home article section div button:last-child:hover {
+
+    background: rgb( 55,55,55 );
+}
+
+.Home article section aside {
+
+    margin-right: 8vh;
+}
+
+.Home article section aside figure.wrap-middle-picture::before {
+
+    content: '' ;
+    position: absolute;
+    width: 6vh;
+    height: 6vh;
+    min-width: 35px;
+    min-height: 35px;
+    background-image: url('../senzu.png');
+    background-size: cover;
+    background-color: rgb(35,35,35);
+    transition: .3s linear opacity;
+}
+
+.Home article section aside figure.wrap-middle-picture:hover::before {
+
+    opacity: 0;
+}
+
+.Home figure {
+
+    margin: 0;
+}
+
+.Home article section aside figure figcaption {
+
+    display: flex;
+    justify-content: space-between;
+}
+    
+.Home article section aside figure:first-child {
+    margin-left: 0;
+}
+
+.Home article section aside figure:last-child {
+    
+    margin-right: 0;
+}
+
+.Home article section aside figure figcaption figure {
+    position: relative;
+}
+
+.Home article section aside figure figcaption figure::before {
+
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url('../senzu.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgb(35,35,35);
+    transition: .3s linear;
+}
+
+
+.Home article section aside figure figcaption figure:hover::before {
+
+    transform: scale( 0 ) rotate(360deg);
+}
+
+.Home article section aside figure figcaption figure {
+
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1150px) {
+
+    .Home article section {
+
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+       
+    .Home article section div:first-child , 
+    .Home article section aside {
+
+        margin: 0;
+    }
+}
