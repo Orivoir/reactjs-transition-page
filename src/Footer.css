@@ -1,0 +1,28 @@
+footer {
+
+    padding: 4vh;
+    background: #2f4050;
+}
+
+footer p {
+
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+    letter-spacing: .16rem;
+    line-height: 2rem;
+    margin: 0;
+}
+
+footer p a {
+
+    color: #00a9a0;
+}
+
+@media screen and (max-width:700px) {
+
+    footer p {
+
+        font-size: 1.25rem;
+    }
+}

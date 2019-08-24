@@ -3,6 +3,7 @@ import './App.css';
 import {Switch ,Route,Link} from 'react-router-dom' ;
 import {routes} from './route' ;
 import ReactTooltip from 'react-tooltip';
+import Footer from './Footer';
 
 /**
 * git expemples repository :  
@@ -143,6 +144,8 @@ export default class App extends React.Component {
               ) )
             }
           </Switch>
+
+          <Footer />
         </>
     ) ;
 
