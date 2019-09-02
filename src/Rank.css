@@ -1,3 +1,9 @@
+.Rank {
+
+    display: flex;
+    flex-direction: column;
+}
+
 .Rank ul {
     
     display: flex;
