@@ -53,20 +53,31 @@
          * 
          * get usage [https://orivoir.github.io/fluid-rank-stars/usage/index.html]
          */
-        document.addEventListener('DOMContentLoaded' , () => (
+        // document.addEventListener('DOMContentLoaded' , () => (
           ( fluidRankInit => {
 
-            fluidRankInit({
-              background: {} ,
-              onValid: data => {
+            document.addEventListener('rank-ready' , () => {
 
-                data.contain.parentNode.querySelector('.rank-text').textContent = data.rank ;
+              fluidRankInit({
 
-              } 
-            }) ;
+                // optional
+                background: {
+                  // default: "#code-color" , ( default: "rgb(192,192,192") ) 
+                  // active: "#code-color" ( default: "#7e701f" )
+                } ,
+                onValid: data => {
+
+                  data.contain.parentNode.querySelector('.rank-text').textContent = (data.rank).toFixed( 1 ).toString().replace('.' , ',' ) ;
+
+                }
+
+              }) ;
+
+            } ) ;
+
 
           } )( fluidRankInit )
-        ) ) ;
+        // ) ) ;
 
     </script>
   </body>

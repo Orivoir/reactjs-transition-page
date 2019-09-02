@@ -102,7 +102,7 @@ export default class Home extends React.Component {
                             {
                                 Array.from( Array(4).keys() ).map( key => (
 
-                                    <li>
+                                    <li key={key}>
                                         <section>
 
                                             <figure>
