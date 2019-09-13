@@ -1,0 +1,18 @@
+.build h2 {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+.build .worksWeb {
+
+    display: inline-block;
+    max-width: 100%;
+    /* width: 100%; */
+    height: auto;
+    position:relative;
+    left: 50%;
+    transform: translateX(-50%);
+}

@@ -56,6 +56,10 @@
         // document.addEventListener('DOMContentLoaded' , () => (
           ( fluidRankInit => {
 
+            /** 
+             *  event dispatch from Rank.jsx componentDidMount dont listen DOMContentLoaded becauze
+             *  event is dispatch before load dom 
+             */
             document.addEventListener('rank-ready' , () => {
 
               fluidRankInit({
